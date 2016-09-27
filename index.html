@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux (vers 6 November 2007), see www.w3.org">
+  <meta charset="UTF-8">
+
+  <title>CSE 391</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="icon.ico">
+  <script src=
+  "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+  type="text/javascript">
+</script>
+  <script src="script.js" type="text/javascript">
+</script>
+</head>
+
+<body onload="displayQ();date()">
+  <div class="navbar">
+    <ul>
+      <li id="date"></li>
+
+      <li><a href="#con">Converter</a></li>
+
+      <li><a href="#quot">Quote</a></li>
+
+      <li><a href="#cal">Calculation</a></li>
+
+      <li><a href="#mag">Magic</a></li>
+    </ul>
+  </div>
+
+  <div class="right">
+    <div id="con" class="container">
+      <div class="content">
+        <h4>Convert values from Kg to Pound or Pound to Kg.</h4>
+
+        <div>
+          <input type="text" name="fvalue" value="" id="fvalue"
+          size="10" placeholder="enter value" onkeyup="convert()">
+        </div>
+
+        <div>
+          <select id="convto" onclick="convert()">
+            <option>
+              Kg to Pound
+            </option>
+
+            <option>
+              Pound to Kg
+            </option>
+          </select>
+        </div>
+
+        <div id="result"></div>
+      </div>
+    </div>
+
+    <div id="quot" class="container">
+      <div class="content" id="q">
+        <h4>Random Quotes on page load or refresh.</h4>
+
+        <p id="qt"></p>
+      </div>
+
+      <div id="blue" onclick="blue()" class="color" style=
+      "background:blue" title="click to change color"></div>
+
+      <div id="green" onclick="green()" class="color" style=
+      "background:green" title="click to change color"></div>
+
+      <div id="red" onclick="red()" class="color" style=
+      "background:red" title="click to change color"></div>
+
+      <div id="yellow" class="color" style="background:yellow"
+      title="click to change color" onclick="yellow()"></div>
+
+      <p style="clear:both;">Click the colors to change.</p>
+    </div>
+
+    <div id="cal" class="container">
+      <div class="content">
+        <h4>Calculate Min, Max, Average, Reverse and Sum for a
+        series of numbers.</h4><input type="text" name="nvlaue" id=
+        "nvalue" placeholder="enter numbers" onkeyup="calc()">
+
+        <p>Max : <span id="max"></span></p>
+
+        <p>Min : <span id="min"></span></p>
+
+        <p>Sum : <span id="sum"></span></p>
+
+        <p>Reverse : <span id="reverse"></span></p>
+
+        <p>Average : <span id="avg"></span></p>
+      </div>
+    </div>
+
+    <div id="mag" class="container">
+      <div class="content">
+        <h4>Click buttons to edit Text</h4>
+        <textarea id="str">
+</textarea>
+      </div><button onclick="clr()">Clear</button> <button onclick=
+      "upcase()">Capitalize</button> <button onclick=
+      "tsort()">Sort</button> <button onclick=
+      "trvs()">Reverse</button> <button onclick="strip()">Strip
+      Blank</button> <button onclick="addnum()">Add
+      Numbers</button> <button onclick="shuffle()">Shuffle</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    Last Modified : <span id="lastmod"></span>.<br>
+    File Location: <span id="loc"></span><br>
+    Design by : M Rayhan Ahmed © My webpage.<br>
+    Helps Taken from: <a href="http://www.w3schools.com" target=
+    "_blank">www.w3schools.com</a> <a href=
+    "http://www.stackoverflow.com" target=
+    "_blank">www.stackoverflow.com</a>
+  </div>
+</body>
+</html>

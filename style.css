@@ -1,0 +1,226 @@
+@import  'https://fonts.googleapis.com/css?family=Basic|Forum|Gentium+Basic|Marcellus|Marck+Script|McLaren|Mirza|Poiret+One';
+html {
+	font-family: 'Marcellus',serif;
+}
+
+body {
+	padding-left: 300px;
+	margin: 0;
+}
+
+h4 {
+	border-bottom: 1px dotted #273635;
+}
+
+.navbar {
+	width: 300px;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	background-color: #3f7356;
+	color: #273635;
+}
+
+.navbar ul {
+	width: 100%;
+/*background-color: grey;*/
+	padding: 0;
+	display: block;
+	margin: 0;
+	font-size: 1.4em;
+	color: inherit;
+}
+
+.navbar ul li {
+	color: inherit;
+	width: 100%;
+	padding: 0;
+	display: block;
+}
+
+ul li:hover,ul li:active {
+	background: #273635;
+	color: #fff;
+}
+
+.navbar ul li a {
+	color: inherit;
+	display: block;
+	padding: 10%;
+	text-align: center;
+	text-decoration: none;
+}
+
+#date {
+	text-align: center;
+	padding: 10% 0;
+	background: #273635;
+	color: #fff;
+	max-width: 100%;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.right {
+/*z-index:1;*/
+	position: relative;
+	height: auto;
+	width: 100%;
+/*background-color: #8da681;*/
+	overflow: auto;
+}
+
+.container {
+	padding: 5%;
+	margin-bottom: 10px;
+	position: relative;
+	background: ;
+	height: 500px;
+}
+
+.content {
+	text-align: center;
+	background: ;
+	position: relative;
+	border: 3px solid #273635;
+	border-radius: 2px;
+	height: 90%;
+	max-height: 90%;
+}
+
+input,select {
+	font-family: 'Marcellus',serif;
+	display: block;
+	padding: 6px 12px;
+	font-size: 18px;
+	border-radius: 4px;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 50px;
+	border: 1px solid #ccc;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+}
+
+textarea:focus,input:focus,select:focus {
+	border-color: #66afe9;
+	outline: 0;
+	box-shadow: 0 0 8px #66afe9;
+	-webkit-box-shadow: 0 0 8px #66afe9;
+}
+
+textarea {
+	font-family: 'Marcellus',serif;
+	padding: 1% 2%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 90%;
+	margin: auto;
+	height: 80%;
+	background: #eceee7;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+}
+
+button:hover,button:active {
+	outline: 0;
+	background: #273635;
+	box-shadow: 0 4px 8px 0 #273635;
+}
+
+button {
+	font-family: 'Marcellus',serif;
+	width: 120px;
+	border: none;
+	padding: 10px;
+	background: #3f7356;
+	color: #fff;
+	border-radius: 2px;
+	margin: 5px;
+	text-align: center;
+}
+
+#result {
+	font-size: 18px;
+	margin-top: 50px;
+}
+
+#qt {
+/*the paragraph where quote is bing displayed*/
+	font-size: 1.2em;
+	margin-top: 120px;
+	text-align: center;
+}
+
+#q {
+	transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+}
+
+.color {
+	position: relative;
+	margin: 10px;
+	float: left;
+	height: 20px;
+	width: 20px;
+	padding: 1px;
+	border-radius: 2px;
+}
+
+.blue {
+	font-weight: 700;
+	font-family: 'McLaren',cursive;
+	color: #fff;
+	background: #423c5e;
+	border: 3px solid #ff0;
+}
+
+.green {
+	text-transform: uppercase;
+	color: green;
+	background: #ff0;
+	border: 3px solid blue;
+}
+
+.yellow {
+	font-style: italic;
+	color: #ff0;
+	background: green;
+	border: 3px solid red;
+}
+
+.red {
+	font-size: 150%;
+	color: red;
+	background: #ffe7d1;
+	border: 3px solid green;
+}
+
+.footer {
+	text-align: center;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	font-size: 16px;
+	padding: 1%;
+	clear: both;
+	color: #000;
+	max-width: 100%;
+	min-width: 600px;
+}
+
+.footer a:hover {
+	color: green;
+	text-decoration: none;
+}
+
+@media screen and (max-width:650px) {
+	.navbar {
+		width: 150px;
+	/*resizing navbar when browser is resized*/
+	}
+
+	body {
+		padding-left: 150px;
+	}
+}
