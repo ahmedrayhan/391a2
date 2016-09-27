@@ -49,7 +49,7 @@ else{
 
 function displayQ(){
 
-  var arr= ["Life is about making an impact, not making an income. -Kevin Kruse",
+  var arr= ["Life is about making an impact, not making an income. -Kevin Kruse", //array of quotes.
 
 "Whatever the mind of man can conceive and believe, it can achieve. -Napoleon Hill",
 
@@ -129,7 +129,7 @@ function strip(){
   x=x.split("\n");
   var y="";
   for (var i = 0; i <x.length; i++) {
-    x[i]=x[i].replace(/\s+/g,' ').trim();
+    x[i]=x[i].replace(/\s+/g,' ').trim(); //removig extra space and empty lines
     if (x[i] !== '') {
       y=y+x[i]+'\n';  //adding all the elemnts of the array to a string 
     };
@@ -137,7 +137,6 @@ function strip(){
   };
   document.getElementById("str").value=y.substring(0,y.length-1);//avoiding the extra new line in the string.
   
-  // x=x.replace(/^\s*\n/gm, ",");
 }
 function clr(){   
     document.getElementById("str").value="";
